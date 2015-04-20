@@ -4,9 +4,9 @@
 domain = 'example.com'
 
 puppet_nodes = [
-  {:hostname => 'puppet',  :ip => '172.16.32.10', :box => 'precise64', :fwdhost => 8140, :fwdguest => 8140, :ram => 512},
-  {:hostname => 'client1', :ip => '172.16.32.11', :box => 'precise64'},
-  {:hostname => 'client2', :ip => '172.16.32.12', :box => 'precise64'},
+  {:hostname => 'puppet',  :ip => '172.16.32.10', :box => 'fc-centos-6-6-x64-virtualbox', :fwdhost => 8140, :fwdguest => 8140, :ram => 512},
+  {:hostname => 'client1', :ip => '172.16.32.11', :box => 'fc-centos-6-6-x64-virtualbox'},
+  {:hostname => 'client2', :ip => '172.16.32.12', :box => 'fc-centos-6-6-x64-virtualbox'},
 ]
 
 Vagrant.configure("2") do |config|
@@ -30,10 +30,16 @@ Vagrant.configure("2") do |config|
         ]
       end
 
-      node_config.vm.provision :puppet do |puppet|
-        puppet.manifests_path = 'provision/manifests'
-        puppet.module_path = 'provision/modules'
-      end
+      # Bootstrap puppet collections 1
+      config.vm.provision :shell, :path => 'bootstrap-el.sh'
+
+      config.vm.synced_folder ".", "/vagrant", disabled: true
+      config.vm.synced_folder "./code/", "/etc/puppetlabs/code"
+      #node_config.vm.provision :puppet do |puppet|
+#        puppet.manifests_path = 'provision/manifests'
+      #  puppet.options = "--debug"
+      #  puppet.module_path = 'provision/modules'
+      #end
     end
   end
 end
