@@ -38,7 +38,7 @@ function conf_server() {
   fi
 
   sed -i "s/2g/${PMemory}m/g" /etc/sysconfig/puppetserver
-  gem install librarian-puppet --no-ri --no-rdoc
+  /opt/puppetlabs/puppet/bin/gem install librarian-puppet --no-ri --no-rdoc
 }
 
 
