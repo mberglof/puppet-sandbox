@@ -19,6 +19,7 @@ Vagrant.configure("2") do |config|
 
       if node[:fwdhost]
         node_config.vm.network :forwarded_port, guest: node[:fwdguest], host: node[:fwdhost]
+        config.vm.synced_folder "librarian/", "/librarian"
       end
 
       memory = node[:ram] ? node[:ram] : 256;
