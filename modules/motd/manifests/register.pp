@@ -1,3 +1,4 @@
+# Register stuff in /etc/motd
 
 define motd::register($content='', $order=10) {
   if $content == '' {

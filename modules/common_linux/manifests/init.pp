@@ -13,7 +13,8 @@ class common_linux {
   user {'highpin':
     ensure  => present,
     uid     => 6000,
-    comment => 'user exists solely to stop auto-created users being added in the user restricted range',
+    comment => 'user exists solely to stop auto-created users being added in the
+    user restricted range',
     shell   => '/bin/false'
   }
 

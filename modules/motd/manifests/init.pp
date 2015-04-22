@@ -1,3 +1,5 @@
+# module motd
+# updated /etc/motd with installed modules and puppet environment
 
 class motd {
   $motd = '/etc/motd'
