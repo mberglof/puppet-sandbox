@@ -39,7 +39,9 @@ Vagrant.configure("2") do |config|
       librarian-puppet install --verbose
 HACK
 
-      config.vm.provision :shell, inline: $hack
+      if node[:hostname] == "puppet"
+        config.vm.provision :shell, inline: $hack
+      end
 
       node_config.vm.provision :puppet do |puppet|
         puppet.manifests_path = 'provision/manifests'
