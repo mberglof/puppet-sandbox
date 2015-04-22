@@ -11,4 +11,6 @@ node 'client1' {
   class { 'helloworld': }
 }
 
-node 'client2' { }
+node 'client2' {
+  class { 'common_linux': }
+}
