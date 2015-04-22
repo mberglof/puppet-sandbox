@@ -1,3 +1,5 @@
 nodes.pp
-modules/*
+code/*
 .vagrant
+librarian/modules
+librarian/.tmp
