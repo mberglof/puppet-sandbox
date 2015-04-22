@@ -1,0 +1,618 @@
+# Devops users only (5000s)
+---
+users_devops:
+    mberglof:
+        comment: mberglof
+        email: marcus.berglof@fundingcircle.com
+        ensure: present
+        gid: users
+        managehome: true
+        ssh_authorized_keys:
+            mberglofkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDjZECD1L4SIjXjUTStuoEqmJyKR0QvEuF4XRu+I15IwVHR2J5Gvf0LLQAGQ0fV08WMn58r2vu43c7yxVFfGWmHJKEXt6iVdMtsRlYoFuPVCH37p902b0YimtSCjTHHWs9JArRlvGLjh3SGJI52g1Vw9PL1G2iDVVi2qL8Wrfo/ZudW07+QhJbKbjrp6gF4Uu6WYJd+tD81xpyxvECxm/J/Pym/XCfUzvCokDxVaUT/toH8T0avWU5IpSDvWQ9PgWnq4iu5D1a27w1j1YNuKZIJYinhEYiQPt2MD5BCPWTmgx7ytTKHp6XwKBRm0CG4WiwPvuGsLdTN/nHqhi1MxN/V'
+                type: 'ssh-rsa'
+        uid: 5001
+        groups:
+            - devops
+        username: mberglof
+
+    msoutherden:
+        comment: msoutherden
+        email: matt.southerden@fundingcircle.com
+        ensure: present
+        gid: users
+        managehome: true
+        ssh_authorized_keys:
+            msoutherdenkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC7xdrPR1DzWj+SKdGxrkSuvp5B+SHkzgvkhgGO/hSFG4tCanL58/ZNFhYdGa3p6i57kGClVHyDbhZDsF1ENi5nhDfOzKPj4s5JvwDdVYJfhC7wzInm27tYOhIT6AsejWRxMM5//3Xk7o3q3gWBIS6RiANR8FI0Qw23/H3xaOpXXAS8xOIgmdXXWcG5NefKSJ1eR4PKsTDdJJuMYefgIBzfy3n+rwNAqGnXomDwALm1wtrqCZYMWqEoaQ7mM7B2i7F8Bo+XNw96Wm4+t15t3DSVl519FuT1t5NPGNyGCMeYIkTHoRRZka4We4MH2yxBGHzpQKypBqEtG4tNMcvewS2X'
+                type: 'ssh-rsa'
+        uid: 5002
+        groups:
+            - devops
+        username: msoutherden
+
+    srobinson:
+        comment: srobinson
+        email: stuart.robinson@fundingcircle.com
+        ensure: present
+        gid: users
+        managehome: true
+        ssh_authorized_keys:
+            srobinsonkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC4xs2ckd1ej5A00/za/1xojMLpW1TO00nkIl7WfIwRJcsvJ0RwecZEL9IlMv1X3E4ERKguSzsABqN0TZZhIUMKOWDHYw/ks74g+A8jRG62FdK3EFnc220vDoIsNhxse/5TbgYE3haUzGD/FKWR8pOg79CMV3MPv1vf6ZW3oJFDrdJQMnNnxY//CibHJa0QQ5MCIF34gNTFVjMTOVQtPCRuDP9NkmbnQHyri8k0pktwNM1yyPfTuSYInSDEB+F8F7120v7hyo84dtXEnO1ncRDmUs+cdurzE4K3sE2LOusCBp590AZiPxnCFRostjSf440MPZkBjzOwjKVMl9VPJbV9'
+                type: 'ssh-rsa'
+        uid: 5003
+        groups:
+            - devops
+        username: srobinson
+
+    jcondron:
+        comment: jcondron
+        email: james.condron@fundingcircle.com
+        ensure: present
+        gid: users
+        managehome: true
+        ssh_authorized_keys:
+            jcondronkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDOUq/yfzoj+ZptKzxxNfeohG+UmrJGDNlI2vDWSm2QxP8WaZAqypeeb8EWXVK9WUf5he7+ycAZzAzMitTchbDGgY+EqARUkJPSfiRA42qiSHWW4El2O7g2lz9M2wCmR/ixl116rf1lvWlTLK2xtdQuX/wAJqGcg+I/rWdAIJBX01p4D2l2H21jnV0KoPHU8zFEhuecic5vviRGfHY9aWNYrw9+t6AaiHtcnr9DL0xLxHlJyRWW5aUW5QMBumma/QH67VS7v3rop17QGBU54RnXBZYEAEYT8zjJ60YwhTkcflvmD5YHzcALiSh/dDlI/lQTh6pq8q8TLsahaBEInQo9'
+                type: 'ssh-rsa'
+        uid: 5004
+        groups:
+            - devops
+        username: jcondron
+
+    dmcnicholl:
+        comment: dmcnicholl
+        email: dave.mchnicoll@fundingcircle.com
+        ensure: present
+        gid: users
+        managehome: true
+        ssh_authorized_keys:
+            dmcnichollkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC4AqjE3YpY+ig0mkW7qISr9uHKFjRcR3ef7tHYRCkGBgTsUed+iJbH6j4VRZtKDb4D1ExgiN4p7H1AVmwwzCb+a2t3AzLqmYWk4FfQrJKK4thVRlvSG8OLvES+V+ADc0RrLCOJ7hWAgTDBB5WnGu2szHbm7veu2lxax/6Cxq53ifGZT/t5B9uoTfqmuru4gWC/NFjVwayBm1/MnjnTKNDgJTtB3ffAR53333yvwG+wol5uhtDTfYk6s0exmxsJ7eMSI8eAOHDyP1eQqkRO2T2xYp0Gt7+5ML/4eO2+yrDYT7NFoKfVM0sBiQxybVkUyFwbBFYSZeJVora54hUWz+3T'
+                type: 'ssh-rsa'
+        uid: 5005
+        groups:
+            - devops
+        username: dmcnicholl
+
+    bjones:
+        comment: bjones
+        email: byron.jones@fundingcircle.com
+        ensure: present
+        gid: users
+        managehome: true
+        ssh_authorized_keys:
+            bjoneskey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDSiRy9JYAqtOOHGygp4Fn/3taO3JK0J5PzSAtMAPGqdCfgSK30mPD9DsTee+Cr+tlnCK1ePZObjLqFDxBNIW876bhtyXBArJ/9LpAXQN90j99PtYbOl/rVLasQCKABtyHcrXXBfIm1Vm7b1A8bktaw654TXcO0vQc4cvYp2CoN6CZe96XBwpMlO57p9qK+TqvieGHp6LPdjFtJb1cQaK0mIQkfZurhRKU+BFBt93+axBIy4KArV/RLk7tjiMFUyjr79WhGjwIHCvdruQK7hHE5GKE7jJsF2kHDbZyruMUeWQOkPKQdFP8sonRDGjOi2BFWWuw2Yk6vobyvGI84yaEn'
+                type: 'ssh-rsa'
+        uid: 5006
+        groups:
+            - devops
+        username: bjones
+
+    mafonso:
+        comment: mafonso
+        email: miguel.afonso@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - devops
+        managehome: true
+        ssh_authorized_keys:
+            mafonsokey:
+                key: 'AAAAB3NzaC1kc3MAAACBANAFceHJ6/QgVP2Yw3ciMlVI/6lw6O6c6aA7u3WEww+cc1ymh3Wh3yLV/pO9giABcE2j3pW+VNsR5IlvFZgtOeNkCYVa8pFwZ7hzic0hIrx2gww68ysGk5esJpWrdt8iSK1plMxiBHjNnDbawkBDd41rEpUzcqEkrQQUQaFvU7GFAAAAFQCcCOYadTtodzqIHgoKw6MIeTSjHwAAAIBgBCFBcOqimyLb5z8UOm0x+txwBplUlQq/SNShCebUwybq86bo3HR6qf4LyQ06hhEwgroSUfEgGhu0ARVe38koimv80sa5txYVDwbeZk5FEAmh81jtkFYAyVEMChjBZ9Eop/SXSnCE+DxBnZXDxhYD2vQ5ZnwPqZyl5/FAbiOZvwAAAIEAmB1Ni9rQjUHn9xmhtpFkRjrwdFe81VaIrA14MogzR60SMefvvARK4dO2a3Kcnmxg1VygOaz3Ric3w3XD0entoAEAyYsqqj1r0qx1o5ix7A64WWg2wLGb8PJZ7FtshP8/lJs8qWQ+3rFiPU4xlWgySmKA4DdnRgex0DuqaQ2qNZo='
+                type: 'ssh-dss'
+        uid: 5007
+        username: mafonso
+
+users_developers:
+    nchandler:
+        comment: nchandler
+        email: neil.chandler@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            nchandlerkey:
+                key: 'AAAAB3NzaC1yc2EAAAABIwAAAQEA8IvpbMFavqNVgGmtmC3KqM/WxgFUZrdlp7xpRfTdrTL0zRDF7Ofd4+z39RauE37VGlal42gN44915014h68Qeq06HSxiF0a/cjf9r3ojC6CO1MYt7AIKLYlL7W5FiGXQmiv+OIhFQwE4XRiIUEO6jjKFCQIQgq/CMjGBEuZZzz3xdmcZ1rrcapXe9/WjXk+Va+U0Erh0MENkEJKJ/Pna3hb11d/NkVO9+4aCb6w03F67RIbmThYANTwPC2UPA3zEQwpiRubIr49INTd/HIJiWrlrdEKyP6CmEijXUYlCME1XGtpt1Be36o4jiwynFlhiMxifwch7KXHFlVkDM/d88Q=='
+                type: 'ssh-rsa'
+        uid: 5500
+        username: nchandler
+
+    ahussain:
+        comment: ahussain
+        email: azher.hussain@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            ahussainkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDQ6CK4xyCX939Spzr7/F//O56b3C7n3vh/h/E4+cMEO06iR2ZbNXC0cMdRPkjCJSHw2iK5QAb7SOUlKRWhSeJYCImWvU+1s6idAf4S/oUOSsK/KXjosL/f0i2N2M704edr16wJ521jnLED5DKM3Z0Xg5+LaiTbZ332Px3HpMPeq9QSS6+5yoqCrI8RrKbMPz/latpSDtMRKhlthLGLcQp3qCwwDWhvS6V1y2z/LxfhKbWLZmem5xOME3XTWLMmVM7vLyyOk5ai4vNSTk4GUfxyiIUCMCWaCw4RzT53RGCURM2gLlOWLThSanAM0wWuqJlnfcAkzb5ISnK7yxioMIW5'
+                type: 'ssh-rsa'
+        uid: 5501
+        username: ahussain
+
+    mschellhase:
+        comment: mschellhase
+        email: mark.schellhase@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            mschellhasekey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQD2arrDHSqhArNOndNzKG6N66+3zTGQVdlM6AgbDble9WdIE9Ckte8Jiy0WzsJIJRazkhcPQnmQgiat9shePk75SYHYXodhHpJWAg+KScD3gEFarVUHZIAgl6uXZpaN6npASY6nMLUSr21Z9vuxK8w7WqeFNz6WkB+2VEtcW+jVPHldoQSJebgoygnf+bH6zaww1KyEnA1i00+tNvhwVRBUMXiD+96JIHfScII+OFuzxDpiCTZp91OvlW+eyDQQOqZNryQ6BMMYwBRjx2UD15+jvhBoUQ4TWnZTwV66KHTaaHNHCKvi6aGrBPhRH7BbJdStyOaNOo1HNKzgBcHciZmd'
+                type: 'ssh-rsa'
+        uid: 5502
+        username: mschellhase
+
+    jfragkos:
+        comment: jfragkos
+        email: jimmi.fragkos@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            jfragkoskey:
+                key: 'AAAAB3NzaC1yc2EAAAABIwAAAgEAugB34PQT2aaqPQLtBueZh4kMcWvg+59qk961acFryBpJZXK+1d+yF7IymQBSjkmNEiRN1VJ5WdgdONAo7lr+O45rJn5enZpmUxFOMOtw+E0W3hswIqKZLQg8T4mlnGwLW5cmvD0EdV43BR1M8+9mRF4tZYhf0+c4zSyilXsDzPrqwatY5kvFSQWsp0R/STVc+1blG82Oi13SlhYMeo6HXU+bZdeQy958eplMDrNL0edTrmYv1KWzG/VmeM1AubkLblDh2b4G0f3PmGAqg7153a4hmABXgIFDxRYZXqKMWj0E2IJGpbvPsgWGRFzrgSyTHlzwCCGO6Hfxa3TiskxCYnvywZbZ8RA3Ec+x/Njje9vTcZ3eAROkD17uhQQOVW9UgtzhgjsMusOKiSppysAcPUci5qZfBgOoXafsTCUNT+RpyfM1e+E0YepKmoIw83EJOILetbqrHXM9hw9oSJqOCcZFEwUhXSZBjo1YICYrxllTdVkMRoUmloQj4wcyWWx30JfnVqSxylmvP9AhfKq17sqAlWQdbXSj4TCCVkzyzn/v8MZxRd25ePWCL6/j2icKYChEYRak6nWh8Sbd1+G5zDeVp5k2yhTQ82OffTkxxLvTNgNJU501Rl0S3Si9LPDDCbUWkwvJapI+AhCx0NxTTfTvkxTgeEpIOgcLtcklqJ8='
+                type: 'ssh-rsa'
+        uid: 5503
+        username: jfragkos
+
+    ljegede:
+        comment: ljegede
+        email: loga.jegede@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            ljegedekey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC+wtwbXzcb24dmggZa6hFvqbYO0wlia9gWaA84oQ8AJVeSQVJzUoNAy3wS31BsDcWk9HZ+UIpz/UM0Os2jlp1enMn3XiM3k1baPXoabCwZw2t0uzcnGz00dri+ea+RTxJbrZlBFq1oRT+d8FeMB8zBtsSWlKjGSn4IcrWEmXZm9oL/Kplj1mDmRWTJ9rWxJbto17scMOxrsWXWH7VgMle4v/x1UStNRWzNN8b9rGqaeSMJ34fpA8W7WB2gCdUKPvSw9jki0jg9uN4vI4xpaFuQ2npbkhQGOTPwv8OHu+n/SqffK2Z9bn4If0HaQlZhcne5KIlAfQtibfw3BFFe5iG1'
+                type: 'ssh-rsa'
+        uid: 5504
+        username: ljegede
+
+    ameisters:
+        comment: ameisters
+        email: arturs.meisters@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            ameisterskey:
+                key: 'AAAAB3NzaC1yc2EAAAABIwAAAQEA0fAEL8wYMV5PTgPkPtdh1XxBPTHD+USjsgaewYA7UltUKJjku2eRBi4NQY9cj97CYsHjuL1wWr4HtUh0KZMApGcn53nEQsPBYfoGHm+6hZFW2XDTcxwZVVoJDszArcv1Tbjd4pQrI7NZxEzuFiyPw6J8Gz3T22+VsMcVLp5kJvyOnb09RmMH7d4K06XRxlS+rC2mOT2fR6MBOi2QapvagL+RRx14vm9fNkscBxEBvbhsofhcUEq4ZOOwpuQLGDYgqAb3KvJmTA5V4RmgCKv3y/mgQXPM1iK83pLEst3fN679GLN++1R+Xp2djSCH7tL3gPYpCWblgA/5I1X+dNRmxw=='
+                type: 'ssh-rsa'
+        uid: 5505
+        username: ameisters
+
+    jwalton:
+        comment: jwalton
+        email: james.walton@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            jwaltonkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDVegdgPf5a2A8rNCC5Rm4Bx6YdwiLQbMBatNVIdfzd5+dTV/wZo1qv6D2eUy+czFVgETkni/LDBxNa033Vk3/VWfhLa3BiBizL/uOt7OTFTs2Cg1bWxX/pTQw1ycQAiDdJg2IZrfvFdeZ19J4VhEaar0rkGMNO7cXpy/1Vt1X0LU00eqsVDOGWwws4NvwZwgyn2pQIeohwGBxTZ7kg9kKYQK5clPAOC1VwkzDoQy35/tguBHOY+y2bdMnDZoe0OvyJ+efHx/slb4X4Bc0h90b/ntO4eW5fBdhRvC0/HanY1aZQBKQAp/9TcBNcyl5UKNV+qGHJ8pbZlt9iC7MgZQHp'
+                type: 'ssh-rsa'
+        uid: 5506
+        username: jwalton
+
+    whamilton:
+        comment: whamilton
+        email: will.hamilton@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            whamiltonkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC95mN7yHvX34qAtaHy/QIMXBwOvww6ABcE+5Zd1tUhCGSYZCw3r3YanzmX/MiT+tH4xMPMYGa30K5R8FZqY6WiHIRJTB8PMzIcoBTSKzBNDf4R+nEMx719vzVUBd0gX4maKHNaUE+PZfhlGSo/OcrDva58hNqW93Z8ZTS38mjOhHfErMD/R5vfTZdXKNBt4TyCMkLrsy2x53YAaEmOrUq+N7mnYWz4zWrYRjRG5rOifiaOvPTt6AQN1vs5bSLEK909zZtyBiXuit4GNRzy9buzKYYtywqRivW6tNN3bwrgKpEVLY4IKiUa6V95dE4DQ6W6P2OOWF3g7SlmX9vs2/br'
+                type: 'ssh-rsa'
+        uid: 5507
+        username: whamilton
+
+    porrell:
+        comment: porrell
+        email: patrick.orrell@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            porrellkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDhJAZvLKqQz4qvnwiSHL4f8WMrHAQo7K0aTuUwJbNQqutxtYreH7Vfdo0sUwYeMyWT/9If7jcB/OBCClDhSYULVnDWhKmJyv3htsfWHcXZjWQwT748bQnNYe9MW0crKm+Ksg+2tATTQxPbbw7EZyP4E6TuoUbKrXQ7XnvEaN0lM6aSZA7nqM4ZesPJCLkrrj9FtStEGBAaxCfRU21EVJQq3n9nS3lxfX+M6P+hf6vYJu/+64TZ517DZzYwxzShJQVG9sBqL44YUFdCsbEJQzk6274DbqncBKqx/IuqpfdQpjx/25GXWErrbYn2tAZkbqF+jDl4YmaMjZcKZMLoN2VN'
+                type: 'ssh-rsa'
+        uid: 5508
+        username: porrell
+
+    efiguerola:
+        comment: efiguerola
+        email: enrique.figuerola@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            efiguerolakey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCZo69H5I/6IDqH8+UQ77yW4C7dJLProWq/gsUwe+8EYEG1kZ6xfPCXnXoJm81F85HwNGmln3ujpNwzgOfhmKhVANUJ/sqyBcpUAvFkqrR0BFV7sW/XxNHEOOYJNjy1C5mrpxYS8bG24VvojPQ7753kJhz1qczWjHudvNDILPNGq0qBgTmCSK5leYA5yFm06fOfNvLObej8FFjcZxrMwyFRoDzQ4pPcN7O/bLdYZ6gNc9umhI1HBp8m8urgzxe6aIciRZVzMbQ+z6nIXhXqLPPsl/0Ya2/on57t/NwlsSR+JrvMV+5ewLgKc/bVF5379nHsmNy+j3S2BQgx1RC46PIz'
+                type: 'ssh-rsa'
+        uid: 5509
+        username: efiguerola
+
+    smarques:
+        comment: smarques
+        email: sergio.marques@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            smarqueskey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC0G/Cl2Als8ob4hlgUDV+mJ0dEXxFbaql5FgKFxwu0yMFqwn5ZstK5HZqyAELbALP+eQvKl3lDNbNMhbsggvBfpIQnSyn1skFxl+S/Cp8baBJJVLLBYqyKuBXImJicJED6R4w4sb2FM3Z1q1u93fzb+jWKjE5DpyJDefnMgJKGmnT8F2VOB8zFW+Ib3VCfvSpp+8K5yjs9fncZQar50PTIMRrvIepDKl0t7vwR2aAc+Te8Dw3I35726e6jZsZPY6i1jllG4EtcEz0fHFcVh6ck1jt/JEp+Mu24ac46KM5SF8Ntn3OPynaYSWzV16s+Y9uzvW/hgwUDR1dtRaLoEu79'
+                type: 'ssh-rsa'
+        uid: 5510
+        username: smarques
+
+    astuder:
+        comment: astuder
+        email: andi.studer@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            astuderkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDdChOlNzGQz4Ia4WRP/XLcShK0ra4BmPLERJ0wZgMVOAaIhNGgwOZ8PZDaEeaIijCoItGhFrxbxmyqX1jnFuP7vW+g3abgUDuHC0EkLWLZgGhMNBBzFu18rzC4UyeDjEL1n+DzeRct/Aa1Oi4+JEe0mnR/9VkotVGQcvqOplJRPJ4ld1S01BEmTWEOJUU53c0GQ2vwHH7TH2zjQ/xX8CH8RuEQ8lqFl/HPVzk1f+E00NIcx1ZtkyHcw/Tdgq+UMqJ7h8t0r0C0zY+NRZ1O7fnRx3KLtbRmuG74vG3Ue4AvjUi21wl6YnOx/YPG8JMuHGly5IFV5sczZAlSEgrcCb21'
+                type: 'ssh-rsa'
+        uid: 5511
+        username: astuder
+
+    sweet:
+        comment: sweet
+        email: steve.weet@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            sweetkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCjYlDVHykYgko5tbCWpyygonfShjYoAe4vGKNGMEZUoZZ+Eyk/7oxxkY2sTMZj6/E5kc2Ora8FjMEbEmucnElW7jgTUCMEq7fnLzu1rTx6HQ5gMRlmgBusBkeRW+CILVHmy+n14fKXPUTBr+0pAEWmeFF2ySm7G3bmV7YrINFkQhdRL71trogVpSbKndwI/3ibSYrgeKouUvvrea5AF7b5rAOcUVsMxsLaiHM03M+6uNBGhsWeJXbevNzZzvit4yg0nLADZR7OThbVvHQMMGv2ChOpWd4PPLwkD9QvS8jObIq/kEcXheSPDZDmlvTieX9ZipoSQNu4pNnR8ahOJ2AF'
+                type: 'ssh-rsa'
+        uid: 5512
+        username: sweet
+
+    skarumba:
+        comment: skarumba
+        email: shaban.karumba@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            skarumbakey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDLBE/s0fOqSiL73S15iYmpGvLRiCEVq1Q/kTh8wM6K+BUALy5GIqY8kATzDOhjuakk0q/iPiU2e0SQ4uPXGu6dGgMCSt/VqWq0qS/qdyZn9YpP5fDM608fql4Qraw80kUurpGoeE5wLdNcAeA+HEINFR74knEEZxIDxbvT2ougGybDEfM89HRDexksRM26PpNMG9RRacQZaoYzoqLyOScva+ikk9Fv4clrbC2QB9gFMk9ICYMbV4mEo+wzGbexQlNnKu0gr+Trbxvu1c6NGlwYt84bLo5ZyGBfg8MBc7VUk9gNP2F5/HuSJbeFYNBHt8JFMiokQV7tnjo90Qerhdcz'
+                type: 'ssh-rsa'
+        uid: 5513
+        username: skarumba
+
+    sgerrand:
+        comment: sgerrand
+        email: sasha.gerrand@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            sgerrandkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAACAQDN55URr0mrPfAx+GWvQf0qTZgmOMQ0izxPhCwwm4Ctojhd2RG6Ucu2NVmqbGj7lPqxsHmADcxMd7UDxpHFPQUKoJYRdRjiDKAVF9O+lkJdtaTrzGnSuj/FYtgwtj6K8CyGDzuU8/ULWsoS2UzVKBxw6ABtkw04k7qr5mgVUIjQjcz2ZQZ3MWbESNJfSTOJ2sgvDyrdmvb+t09rLYlN1tSLnj19oYULQxJhKTKNKwtXl7oalWVXaccEfgF+lv2LSpQi+aVnVrc0xXPwiV2KSSjpH3k4CHfxF3RfInmJydlpXDLa50UzKkUWLylDP9UH75Bd3ogYACD2Ocn8JXnTqhhBkWk5adywsqatMdkWrC80rprSsp2gGzj35x0P2lKMdxgLeV0dE7AfVKBaRkqcv/AtRLw9pYeDdXoMeDJH5IvqVERqMf46pO5etXJC/yNkzKlDHepIlP1p1VPpd72E/pwuhCPKqV+rzmYk3RvrVleKWmLyWba4CUp59qBZVNq9QK5RdSOwUCP856jGK7ms+YsSVTuK96vcjnTYH44EOy0qNHS3Y8AXqdJMfQK8Hjlr3il9MqSGqJvv8mSzHXc3sun1oFS+e+JkQfaZgO3GOxblCW7lHJI8bQuskjGpMEPW4sLrTa3OIuSa/bBF1RzqTKlU7i537gD33wtf61T0sXyWpw=='
+                type: 'ssh-rsa'
+        uid: 5514
+        username: sgerrand
+
+    jcook:
+        comment: jcook
+        email: james.cook@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            jcookkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC2QsgGnmuLXq09NBZySBbYx2V0YzE79LDZZ6lLOU7h+Zy2knJke/6Rh/YOlZpu5tXQdDRNc2LnzPrVeDeDeYlA5ckjPqysQt/5/ImCEqKUqrztmXRO3aPC242Y9tCiauG/tUP0lng5ajkwuWDr3gi7gNw7O29HI5R5GnFMCFFEwXI7Iv34ponAH++EpoXBtfUcaNMIQjcr+5bBiajm5iWuiUFoYFK6Ld6k/0zKEHOsTlTgeltLscXgtqjmpZmIav0hnuuuBoHQjn6rfCVf9G57ESlLrlqoBo4IBX7Tg5sm/I6cdYjyv0a1PU8rkICoI9kmF35MqQfnIxa+QilOs7UT'
+                type: 'ssh-rsa'
+        uid: 5515
+        username: jcook
+
+    rpaez:
+        comment: rpaez
+        email: rafael.paez@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            rpaezkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDJkET+t0I0U+gGZCk4XZ998I86qPo++ORTBjMLswXMttv1veMn89Vc+eKI1C1ekzFl7Edte863JueAhRxTncVZyRPZIADEDKoh0oT0eM7AqTC+pPuxwh/ApfqgctIv8KGG71/FsIZThCZ5qWOEaE2rVBbURtclMh/G3Yp2xXnYlBUF2+/RMIDTqBYJ/rDK0AoGGCRwvLv9aaR/4mStuVCgR7dapWS8+HCN46WnqrHfPSo75uN3AHauRZDffj29fDUHdj918c7ARUu2jkCHnqp7SllNKHN77a5QJW+ibqc/BTMp2jiLpuiQCQE2LPm7rewlQE9HzwxKtEaYHl1sh53t'
+                type: 'ssh-rsa'
+        uid: 5516
+        username: rpaez
+
+    sjohnson:
+        comment: sjohnson
+        email: sam.johnson@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            sjohnsonkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDdLpmRvdsAfqt49c8tICJlNnF7kjB2HqPFGJhJrz4aYKIFTeHiq98U3pHfaJ2hy8nlBpWNMjHFcCpmehmpC8bW/mzZRFNYXhoFVVJSYtiUPwRRV6fHJgSvoRB8uAzi98MUNc9Pndeicu//0I/EtmJ9+mL8EAuw3f3ZWq0eMeRdrTGbMrdKT7g0Arr8puIYNEC9rRwvKf07W2xYSUxM5XDSlrGVgcidO163eCeDTUrizKHYOvuA/7VJwrnR2xo0CikCF9aglFalg/AvG4es7IvFs2jk7OhJLqkl53jGu4jMfXCjS6DXMyQACKEyyYec8N7MnOUpjNfHoS7mwDqgKvHZ'
+                type: 'ssh-rsa'
+        uid: 5517
+        username: sjohnson
+
+    mihejirika:
+        comment: mihejirika
+        email: michael.ihejirika@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            mihejirikakey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQC+dd5lSx7PdKWo2lQeLmCqGG5uSFV61eWDQaj5ZM08bvaqvJDNl5uvGr1qWtiwuqmLdRiG7oL4rZLPL6ncM+PVNds8L01/5H7gBJTW3I/vJpERzuzwnLGDcHlZ2tpDppA5NXemtM+r9SgtuKhWHJVE9oiASH/5OKGiDOMI00MBGve+ZZT8Lp1yqCPyXlgMSNQrKe/JDogOGAPKR8voMmhOTGmUXczN4+tNMV7g6aefLGok5V63zNXJYLFCK7njW0KuYugRXfF0exGNi8hom5ZhIZ56stEpEErEzUsHkRPfs3nc4ASAUWXv14mQihkpevcgsLSAhD4cglppbSmKpjTz'
+                type: 'ssh-rsa'
+        uid: 5518
+        username: mihejirika
+
+    dlantos:
+        comment: dlantos
+        email: david.lantos@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            dlantoskey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDeoFQh0jz4lz387YbB4q5CUCwJzhtprcaGeELTXYLKQm2cfKaCdqoV11B6KEWjyxYtqwQcBYEaSAmJSR83Mpqf1n/5bZajS993wNTX5sQYg8JVS69pWPHqaCqXR8PrH1TULKCw1g5fqmAcPmq4nHnbbGxRaSIUrZRLNa+7wVQRWW5aC8HZWxErdvXuNgeqeHmjiQtt5uyXDXP/Ky9AVUVPS2cuwSVzcy/S7diYk6PpXYwaw9p73/2b/VM0Qa8xr9q+LunM17WChl5guQqLntOzQxSH89Qz5vJO6piGo5BHvFQicV9sYgrR5OcPOX1rwnNGdSa1S+LtfdW73F1RF1Q3'
+                type: 'ssh-rsa'
+        uid: 5519
+        username: dlantos
+
+    nmunoz:
+        comment: nmunoz
+        email: nacho.munoz@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            nmunozkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQD4/HkAu2taorEmbLrpyAH3UWITc/qHdBDQHmDylt2D+QH8Awh9KP6ZCFelHntJOrOruFapHQ+HMFxDwA08MBqcZRwLXo0H1sLVbGEoqsRsGLLAA4a3L96iUg6UxwBIR55b6hMH49QBZyUbt0e7Ly3vF2zrE7VGQvIwwMeMd/gZvgxqLZKnZqJld7bhH098lULqyPvrSwa7VR1gx8fZYH/CfK0h+J1cGVRp8wHis+GOKD6L1iHuTJNVOrXJh1jV9/LMXjRIgb4UxW5zNnkh0OrsyaSalvnDkIihJg3lAbohYH3zTVrnOwS1trsn9erwh9JIjGsztKcm4zSvRioYIeyV'
+                type: 'ssh-rsa'
+        uid: 5520
+        username: nmunoz
+
+    cmarques:
+        comment: cmarques
+        email: cassio.marques@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            cmarqueskey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDU606wzujnMR8+V/dOIz+BJWCEPL1D0ZONVQtO1DUhsR0iC1bLJh1WrdzyfCLiMH8e+k4ai7IRSdSxBZVyhJjakEXHwg+1MgLrjJ+gjtzs1EWluc5Fh9zQZdQV1qn7qefuMM3ESN57g7L/Lx12UyWFTKSpNWSsmaxMivfXPGYwUjhTEdtp6EUCzsbiuFvKHLUCXU3o0L5f82J05bGvcpoGyjAU9nGj8bn2caIG9Vh2IOy/yZ5BrzeDhGLiAObo/fIRkoQtyi/tu2HA9ayj+gCEcW4KezdrqPqKDDrG+v1lET9NTFdP8OIzHeC8CYH2zypOafo+aCIXIi/ug1kFx0Ep'
+                type: 'ssh-rsa'
+        uid: 5521
+        username: cmarques
+
+    tstott:
+        comment: tstott
+        email: timothy.stott@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            tstottkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDA1p89/hCP4s4K3sHgt5wY2EpA9PTrURjA8crDKHxgfEbJsiFmfs+bjARbbMF4FxN/g/rFEDctfZo24tZ+YOwZ2Kwtf8Nj93QEU4KiBGviQG8d+xCdpecEEl/yr1n4Z8jPOie9BSahdt6vrQntP6T6AFHiEoxW2S3Pd5eT1J6O/ZAofV5PoRSNULfOkAZZ44CIFcdTt2EIxD1qVNMkNdtBFqR+d4iFhgqoY79YmhGgCbIw0F9CsHtmazQQUz6ZDU40zs+gdvrWNR250+9qckuPHWt18cL7wbOtzJTGgP1qHjY/I1KYkoHPMZ9cJgUNkOIW64Ho5/+lIY5GUkhdMR59'
+                type: 'ssh-rsa'
+        uid: 5522
+        username: tstott
+
+    varias:
+        comment: varias
+        email: victor.arias@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            variaskey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDgjutzKTRNOi1yLkHnR+jnRXtQqNgBVafrM58hTmqhQwdQYcaA2Nouiym7S2HwQk7Zi+kpRRUxzE6i1D9dbiiLgqTHLDncx1AF1yeNMJUs7+DyUHA76x4D5D5Zn5TAvdIGTdIKH85TO/KMHzA97s82uq/nyGELLbJ+Lbq0n1Di5adNDimf7B6m6pWwkld3QlAXJIi+QlQLR7Gx+BY146+6bmRFrVGu169JSgLb9ggOPk5bSGRStx0Fns/U7Ywh24xpYQcz4Nd9wjY1UagM08o4/x7netNSQ7G4LYcgoFYHsol6c0ynMudkSzsV7PH2hUjXKqwBONqBYZHnTwge/1iR'
+                type: 'ssh-rsa'
+        uid: 5523
+        username: varias
+
+    acasado:
+        comment: acasado
+        email: alberto.casado@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            acasadokey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCx3Pw2WYWkdgg9sqILEMlQfc5jCAe+C4P77DNzOTZxcNfjCWY1MGUAUMA+aEOOBCC5rUv1RtxSk7fT5N1XhGfw6GCO4/fukeJTriO+u4uGFemIwFJbSGCUvMgw/y8rjGJIlfpKCtJbFHbN+ReQ/KcnOm8SpN5Uyh1WsU/+KdVymwUCkx+eJDu06zG+/zbKSnM/k1nKbJdVi+LhYQuvsys4SKK1lwz47fKp/DlgsaRtT/mCdFjtgljN5/N7BXUJhiNJuEnbo5t82vW9cWt3gR2asWyLsVGPCb4z+vIQ55a3f3X1vKtnq8fjX6W3NU45NnBOYrtQn3Em4G8c/Mrf/ce1'
+                type: 'ssh-rsa'
+        uid: 5524
+        username: acasado
+
+    iczerwinski:
+        comment: iczerwinski
+        email: igor.czerwinski@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            iczerwinskikey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCuH+mOznYuiBYeLVPoFA0fbgIJ472mmDx3iCLFE6FPJnnZQjBiBOGAldGCVW8h/RblBioZA/qOcSHZq4woaa8akUNPA+A0T2Efw88CYuqGnrvMlrFc5no+dJ170EeGE5UQePMxMrfnnXoaUYE3ClUQkdwS/GhifqpVXhXauL9ZpPSH7Gn0cydMPEeLBG34vLE8R4cwDcBCu05+eSanEw5V0ng3pndGe3RICmz2p8KJk7ykpgQmpBXYyS2DNQnMF4Rtem0KVmVXoQgYCCOHJVKzDZ0tji0ATRWrPuBmnZfKORrTg7vbfFqKjmiMeA+gnN5HpLkqruYqoxd7bGlAag0b'
+                type: 'ssh-rsa'
+        uid: 5525
+        username: iczerwinski
+
+    emakinson:
+        comment: emakinson
+        email: emma.makinson@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            emakinsonkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDS2x+ms04B1+8AC+BgaKlP/ikQPCegprysgYXZWyZf7uqYb3wYFYxleTLF+MVqL4yR/6kmC3TMSY/k0TIXFDAHmpJk4dLO9QlbcL6OG9zXWql9iK++YQkltOH2ct7Tx5fcHqXUNlOC81X9iucjqb8et3SrBiGpWPMCGE2cbHwZSgxjoQHBd94gjC3kQ21XMAp+ITYnZG64sxkQBnoDE06Es4jghI+3eIPpQnWWM5cf2ElpGo4RSHsDGDg/p3O7AysD3qNHL+o5I+fnB+AXiYB8n1pF57ax7+/PWqJAe0ruzsaN2KUfVSlhhT9FAa8h2e/OmsOp6JGBdtTS7lPy04VH'
+                type: 'ssh-rsa'
+        uid: 5526
+        username: emakinson
+
+    dideler:
+        comment: dideler
+        email: dennis.ideler@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            didelerkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDLshc45rfjGAXVir3Lq+GsvIERlkQQJB87ffrRET8DnzbrVh30xlhv1hTyAUpe7BuwvNPWnKolalG9pvWjI75cXTCZ7PeelaU0gNh9G37k3WErQYxze+LwFwdrcsKTGL+ihFQLZ9C/mYmJTes9ihMURwQ6gRFCFZc2yWlmPZPGh5o+phcwOT/5jf4bgRRIHLExy8ZaKd+ALUm7gllhLco6f/Je4Sb7djeiBkZmtu9Gquy8L+r7K1VC3e8RynJ6cYBSMG7LkRmJ8vbHfXug80NeVb2iRGMU6geXr0OJs3XOEIjFpjvJ8f1C2LAx1cX5ZCoojp7vEe7YaFpsW2ORu8C7'
+                type: 'ssh-rsa'
+        uid: 5527
+        username: dideler
+
+    dharalanov:
+        comment: dharalanov
+        email: dimitar.haralanov@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            dharalanovkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAACAQDQmjsdsVZEFkGV0WCPbjIk628Ysyg03lImhJiQEyQAU2gGXtOX4kAm3vkvoOzkqVFv2K4w/RhcX2IBTjXHHuqoiG3iRzBvmxpak91uWTOcheRwWexlFYuaTGFxRs84+f1U4GD8KWubK1LdYhoy85NbQnf84nBcXtih3pyF/YdVwkBpVeyDbywIhNPiXy8FQeoWEy0+krZpMgbiMJV7clNs0bGL8yNwm5t4ryD1B/NmRXydAeHRygE/IL7lQJEdwq48D/0XN/OqzRWuXhlLybDSJsDQCv4amj2AkwFBr0h7qFTYm4Y+/XvqRenwVjHYcrTzbi4xMIit24mk4xhss/hZmTk5VGQxWGEUFkT7nhyvbHOan7jBKVL8IazGqA4vhsApgomMXf07xJyWwn8ZtwQaMO0xYLjLWjpssNiGQ3xMrTA84eZcfut5P2wvPiOZ8aeTLfWNqF4fc8mxGkARq2XHFxGayULpqtfXK0GYmCBNpvORwIdzmS1oIekx6+Uy3mwlTHiadhxPSpf8qCGLeEg0/TWx1Dr2c9qKzf0TT82ni6rEGjaGEDc1hRRBqnLAl1dlc91sTFv2DPNDe5Qxtev3fACVqRfT+W0p8E0k9U2nbGXhuEKKurKdAC8eKbUcbI2jBWCTvwwX9sm5krYCv41R2zTl9R+PtFMhtm/aMO2DlQ=='
+                type: 'ssh-rsa'
+        uid: 5528
+        username: dharalanov
+
+    ddobrinov:
+        comment: ddobrinov
+        email: deyan.dobrinov@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            ddobrinovkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDIedVJbol0xCOfs6cQYE6i4T41tgTsoICQTwnoqW6RokjA5kwoxX73dDLFJV45HG66x4OpQ9DuCpkjeDhQmsTO8FdXkVkgvnL6mngeLVM0KVMjJKdFC8f6+WU/QX0r52ve1sYUxreoJ4mdEcvuIBbqd8ySLce/Txhh536UIO0W+eKSPXHZkfE7Jz4aH4kuSKEr+JbU9cHYvhGwIZ8XXH2tFIil4PZtz66HamyBrdJQtsxxzMKyMZrcwL5++N3DfeTPaDdBcQD0L6Tt6Q3ZGkTtXo18j51JtQjRYBdHca7XE+hnz6EA+aa/BJgltz5TUVvW3Oku4y7ySiw4JSliR5lp'
+                type: 'ssh-rsa'
+        uid: 5529
+        username: ddobrinov
+
+    lrivas:
+        comment: lrivas
+        email: luis.rivas@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            lrivaskey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCvYif6+Q+3vZ35PF+iZrcJ2BbV5NDO438NkP+Uo3V98Wjp1nMpEuWmVWkXCqGzTOG5NkRt1FhVGB+ZCfGZPYztDIxBHpMmtnNmWDbvansl5thAnJBCFfxK96gzr3ri6AX20qYCRMdXy1yFJDljWYAdWpfQT+pfGjwf67o6FWZGqcitpjrxUjrk1ULYOkIioSHtyP2xCnh8XQ/NkFNF/pSdxpBqYcgXbmxG1zGNecXLrAqz4bHqEaXK6ukkI2wTv+He+WXQJxxLCC4kQXZV3m5YZjIexRgWDtEZh0nf8HZe+B98foy45odTcWfTTT/EQIQhJPEXEgsEPMNRC/tlFNoB'
+                type: 'ssh-rsa'
+        uid: 5530
+        username: lrivas
+
+    dmilic:
+        comment: dmilic
+        email: dragan.milic@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            dmilickey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDQYXK3Vn8QVbIUwMCz2vR3CwNGhmPgyArUQW3olB7qs/X4u8uh268piTnHFrUj1XeKu776rfrfHLXSXyPcZ4lDNqRlkR4fxCOv8POuvVQSLZ3eS688o1tbm/FMSUOpeUHCtgvLWA7H2dO1ksKFNk9rrP/bvuOoVqp6u6pf+WK94xOHAu/VDflU1Wi1LjGoBAIOlt8l/f5iyC3bjOGgp+QkadvRmGtK2IudpXVzoIzeKFkWVab4K2aCBu54a6shgOzo2ok65DtQ6B1pBl3O5rfBtPW8VVUrILzS93C4p9PfkEHSuY0jZHrxm1mL8rUCELH148w4izuYh/7x16heB+Cl'
+                type: 'ssh-rsa'
+        uid: 5531
+        username: dmilic
+
+    jriga:
+        comment: jriga
+        email: jerome.riga@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            jrigakey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQCecJiKS0CZoFyETuFKQAimD8Em8NBlYV0MLbnIeHTnlpoOurjzb5jYbNXCCxYSCHSqnWuKkn5n9A5zEkLP9nPYJvAK5yaFpbNG2e/8OTy8/l5SlE7dSiHjbEM9owQuWwDarASnqlzm9tLbwNNdpDdxf8T8aieYvdYnYbuwLt5s8wvD/3/sod+dADqjF9JKm8hpA6+cobre9htnUL+bKqarZ5Dk6J051EJLA2oiDY2dahgy2R1WSavjFkdCeYlUQAVONAVkVmPxqdHnBsMr8r1Sk02c+V9suzZNkz3OQAK9y9NcjMEwjV3LD0H5FmVgPyKkH0GgwzHs5drMg4bfUDtB'
+                type: 'ssh-rsa'
+        uid: 5532
+        username: jriga
+
+    snanek:
+        comment: snanek
+        email: sebastian.nanek@fundingcircle.com
+        ensure: present
+        gid: users
+        groups:
+            - developers
+        managehome: true
+        ssh_authorized_keys:
+            snanekkey:
+                key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDD/6xO3f0VNfDoicgZKO4Y0NhdeHeEimmupoX0Bp5teoh79oT5+DIKFbmhBeVdahK9b56iE+7h/Onp9/BiQ/1eV/d8NS5kv8vIHjEbz/F4Dm50IkWhC4s5p3rWjjsJ/soAbPNykMCP3Xl5qr8VT517h+CQNM146SGh48V+yV8mUQnB2dehLv3X9Rgq9ZOWGkoqnaGGXtc5luX2t+vReRgCUVMqz//1uRBEO17KF4bEL0ZeSBDy4K9UGDVgWtbYDxD2/r2tyjKwBc6ABrjOdEhquK5cXvbN7MLniJjgAKpbKQve8+QaLRCGixsKk4z0AuEcUq181F8CCibd7mKJJTK1'
+                type: 'ssh-rsa'
+        uid: 5533
+        username: snanek
