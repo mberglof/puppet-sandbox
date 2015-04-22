@@ -22,4 +22,7 @@ class vagrant {
     ensure => present,
   }
 
+  package { 'ruby-devel': 
+    ensure => installed,
+  }
 }
