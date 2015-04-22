@@ -1,0 +1,19 @@
+FORGE
+  remote: https://forge.puppetlabs.com
+  specs:
+    hunner-hiera (1.2.0)
+    mthibaut-users (1.0.11)
+      puppetlabs-stdlib (>= 0.0.0)
+    puppetlabs-concat (1.2.0)
+      puppetlabs-stdlib (>= 3.2.0, < 5.0.0)
+    puppetlabs-stdlib (4.5.1)
+    saz-sudo (3.0.9)
+      puppetlabs-stdlib (>= 2.3.0)
+
+DEPENDENCIES
+  hunner-hiera (= 1.2.0)
+  mthibaut-users (= 1.0.11)
+  puppetlabs-concat (= 1.2.0)
+  puppetlabs-stdlib (= 4.5.1)
+  saz-sudo (= 3.0.9)
+
