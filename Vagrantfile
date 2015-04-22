@@ -37,7 +37,7 @@ Vagrant.configure("2") do |config|
       bundle install --gemfile /librarian/Gemfile
 HACK
 
-      config.vm.provision :shell, :inline $hack
+      config.vm.provision :shell, inline: $hack
 
       node_config.vm.provision :puppet do |puppet|
         puppet.manifests_path = 'provision/manifests'
