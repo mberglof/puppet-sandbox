@@ -32,9 +32,11 @@ Vagrant.configure("2") do |config|
       end
 
       $hack = <<HACK
-      gem install bundler
-      yum install -y ruby-devel
+      gem install bundler --no-ri --no-rdoc
+      yum install -y ruby-devel git
       bundle install --gemfile /librarian/Gemfile
+      cd /librarian
+      librarian-puppet install --verbose
 HACK
 
       config.vm.provision :shell, inline: $hack
