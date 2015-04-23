@@ -4,9 +4,9 @@
 domain = 'example.com'
 
 puppet_nodes = [
-  {:hostname => 'puppet',  :ip => '172.16.32.10', :box => 'vStone/centos-6.x-puppet.3.x', :fwdhost => 8140, :fwdguest => 8140, :ram => 512},
+  {:hostname => 'puppet',  :ip => '172.16.32.10', :box => 'puppetlabs/centos-7.0-64-puppet', :fwdhost => 8140, :fwdguest => 8140, :ram => 512},
   {:hostname => 'client1', :ip => '172.16.32.11', :box => 'vStone/centos-6.x-puppet.3.x'},
-  {:hostname => 'client2', :ip => '172.16.32.12', :box => 'vStone/centos-6.x-puppet.3.x'},
+  {:hostname => 'client2', :ip => '172.16.32.12', :box => 'puppetlabs/centos-7.0-64-puppet'},
 ]
 
 Vagrant.configure("2") do |config|
@@ -32,11 +32,11 @@ Vagrant.configure("2") do |config|
       end
 
       $hack = <<HACK
-      gem install bundler --no-ri --no-rdoc
-      yum install -y ruby-devel git
+      yum makecache fast
+      yum install -y ruby ruby-devel rubygem-bundler git
       bundle install --gemfile /librarian/Gemfile
       cd /librarian
-      librarian-puppet install --verbose
+      /usr/local/bin/librarian-puppet install --verbose
 HACK
 
       if node[:hostname] == "puppet"
