@@ -37,6 +37,14 @@ Vagrant.configure("2") do |config|
       bundle install --gemfile /librarian/Gemfile
       cd /librarian
       /usr/local/bin/librarian-puppet install --verbose
+      systemctl stop firewalld
+      systemctl disable firewalld
+      yum -y install iptables-services
+      systemctl start iptables
+      systemctl start ip6tables
+      systemctl enable iptables
+      systemctl enable ip6tables
+      iptables -I INPUT 5 -p tcp -m tcp --dport 8140 -j ACCEPT
 HACK
 
       if node[:hostname] == "puppet"
